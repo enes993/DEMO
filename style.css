@@ -93,6 +93,9 @@ color: #FFFFFF;
 opacity: 1;
 white-space: nowrap;
 }
+.navbar-light .navbar-nav .nav-link {
+color:#fff;
+}
 .sec-header h1{
  text-transform: uppercase;
  text-align: center;
