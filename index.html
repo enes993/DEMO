@@ -10,84 +10,422 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/easyScrollDots.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
 
-    <title>Hello, world!</title>
+    </style>
   </head>
   <body>
-    <section class="sec-header">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent mt-3">
-      <a style="color: #fff;" class="navbar-brand mb-1 ml-5 " href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="vl"></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
-          </li>
-          <li class="pl-2 pr-2">
-          <button class="btn btn-gld btn-outline-light bg-transparent mt-1 pl-3 pr-3 shadow-none " type="submit">Elite Courses</button>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav nav2 ml-auto mr-5">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Log In</a>
-          </li>
-          <button class="btn btn-gr btn-outline-light  pl-2 pr-2 shadow-none " type="submit">Sign Up</button>
-        </ul>
-      </div>
-    </nav>
-    <h1>unleash the power<br> of your mind</h1>
-    <i class="far fa-play-circle"></i>
-    <h4>Join, Learn, win & achieve.</h4>
-    <button class="btn btn-lg btn-outline-success shadow-none" type="submit">Start Your Journey</button>
-    </section>
- 
-    <section class="sec-ta">
-      <h1 class="h1-tm">Our Team</h1>
-      <div class="diamond-grad w-100">
-        <ul>
-          <li class="item1"><div class="bg"></div></li>
-          <li class="item2"><div class="bg"></div></li>
-          <li class="item3"><div class="bg"></div></li>
-          <li class="item4"><div class="bg"></div></li>
-          <li class="item5"><div class="bg"></div></li>
-        </ul>
-      </div>
-      <h1 class="h1-ab">About Us</h1>
-      <div class="shape-ab">
-        <div class="circle">
-          <h3 class="mt-4">Bzns Monster School<br><span style="font-size: 20px; color: #DDDD;">From Zero To Hero</span></h3>
+    <div>
+      <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First Section"></div>
+    </div>
+    <div>
+       <section class="sec-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent mt-3">
+          <a style="color: #fff;" class="navbar-brand mb-1 ml-5 " href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="vl"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="pl-2 pr-2">
+              <button class="btn btn-gld btn-outline-light bg-transparent mt-1 pl-3 pr-3 shadow-none " type="submit">Elite Courses</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav2 ml-auto mr-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-gr  btn-outline-light  pl-2 pr-2 shadow-none " type="submit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign Up</button></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <form class="form-horizontal" method="post" accept-charset="UTF-8">
+                      <input class="form-control login" type="text" name="username" placeholder="Name"><br>
+                      <input class="form-control login" type="email" name="email" placeholder="Email"><br>
+                      <input class="btn btn-primary shadow-none mt-2" type="submit" name="submit" value="Next">
+                      <div class="separator mt-3">Or</div>
+                      <input class="btn btn-primary shadow-none mt-2" type="submit" name="submit" value="GOOGLE">
+                      <input class="btn btn-primary  mt-2 shadow-none face-btn" type="submit" name="submit" value="Facebook" >
+                      <input class="btn btn-primary bg-info mt-2 shadow-none twitter-btn" type="submit" name="submit" value="Twitter">
+                  </form>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1>unleash the power<br> of your mind</h1>
+        <i class="far fa-play-circle"></i>
+        <h4>Join, Learn, win & achieve.</h4>
+        <button class="btn btn-lg btn-outline-success shadow-none" type="submit">Start Your Journey</button>
+        </section>
+    </div>
+    
+    <div>
+      <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Second Section"></div>
+    </div>
+    <div>
+      <section class="sec-ta">
+          <h1 class="h1-tm">Our Team</h1>
+          <div class="diamond-grad">
+            <ul>
+              <li class="item1"><div class="bg"></div></li>
+              <li class="item2"><div class="bg"></div></li>
+              <li class="item3"><div class="bg"></div></li>
+              <li class="item4"><div class="bg"></div></li>
+              <li class="item5"><div class="bg"></div></li>
+            </ul>
+          </div>
+          <h1 class="h1-ab">About Us</h1>
+          <div class='wrapper'>
+            <div class='circle'>
+              <h3 style="font-size: 2vw;" class="mt-4">Bzns Monster School<br><span style="font-size: 1.5vw; color: #DDDD;">From Zero To Hero</span></h3>
+            </div>
+            <div class='rectangle' style="padding-top:11%; padding-bottom:11%; margin-left: 4.5%;">
+              </div>
+              <p style="font-size: 1.8vw; padding-left: 37.3%; position: absolute; color:#fff; padding-bottom: 3%;"><span style="margin-right: 15.3%;">Lorem ipsum dolor sit amet, consetetur</span><br> sadipscing elitr, sed diam nonumy eirmod tempor<br> invidunt ut labore et dolore magna aliquyam erat.</p>
+            <button class="btn btn-outline-secondary secondary1">Read More</button>
+          </div>
+        </section>
+    </div>
+    
+    <div>
+      <div class="scroll-indicator" id="section03" data-scroll-indicator-title="Third Section"></div>
+    </div>
+    <div>
+       <section class="sec-cou">
+          <h1 class="h1-cou">Courses</h1>
+          <div class="container cont-scale" style="margin-top:70px;">
+            <div class="row gutters">
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                <div class="card mx-4">
+                  <img class="card-img" src="course.jpg" alt="Vans">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                  </div>
+                  <div class="pt-1" style="padding-left: 20px;padding-right: 20px;">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle">2,000 Students</h6>
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle text-right">3 hours</h6>
+                    </div>
+                  </div>
+                  <div class="card-title pt-2 pr-4 pl-3">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <a href="#" class="card-link mb-1">
+                      <li style="display: inline;"><img class="mb-1" src="stars.png" width="100px"></li>
+                      <li style="display: inline;" class="pl-4 text-warning font-weight-bold">5/5</li>
+                      </a>
+                      <div>
+                      <a href="#" class="card-link">
+                        <i  class="fas fa-heart mr-2"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                    <h5 style="font-size:12px; font-weight: bold;" class="card-title mt-2">Photoshop for Beginners</h4>
+                    <h6 style="font-size:10px;" class="card-subtitle mb-2 text-muted">Medhat Shalabi - Graphic Designer</h6>
+                    <h5 style="font-size:16px; font-weight: bold; font-family: 'Roboto';">20 $<span class="pl-3 mt-2 " style="font-size:14px; color: rgb(202, 201, 201);"><del>50$</del></span></h5>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                <div class="card mx-4 ">
+                  <img class="card-img" src="course.jpg" alt="Vans">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                  </div>
+                  <div class="pt-1" style="padding-left: 20px;padding-right: 20px;">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle">2,000 Students</h6>
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle text-right">3 hours</h6>
+                    </div>
+                  </div>
+                  <div class="card-title pt-2 pr-4 pl-3">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <a href="#" class="card-link mb-1">
+                      <li style="display: inline;"><img class="mb-1" src="stars.png" width="100px"></li>
+                      <li style="display: inline;" class="pl-4 text-warning font-weight-bold">5/5</li>
+                      </a>
+                      <div>
+                      <a href="#" class="card-link">
+                        <i  class="fas fa-heart mr-2"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                    <h5 style="font-size:12px; font-weight: bold;" class="card-title mt-2">Photoshop for Beginners</h4>
+                    <h6 style="font-size:10px;" class="card-subtitle mb-2 text-muted">Medhat Shalabi - Graphic Designer</h6>
+                    <h5 style="font-size:16px; font-weight: bold; font-family: 'Roboto';">20 $<span class="pl-3 mt-2 " style="font-size:14px; color: rgb(202, 201, 201);"><del>50$</del></span></h5>
+                  </div>
+                </div>
+                </div>
+              </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                              <div class="card-wrapper">
+                <div class="card mx-4">
+                  <img class="card-img" src="course.jpg" alt="Vans">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                  </div>
+                  <div class="pt-1" style="padding-left: 20px;padding-right: 20px;">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle">2,000 Students</h6>
+                      <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle text-right">3 hours</h6>
+                    </div>
+                  </div>
+                  <div class="card-title pt-2 pr-4 pl-3">
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <a href="#" class="card-link mb-1">
+                      <li style="display: inline;"><img class="mb-1" src="stars.png" width="100px"></li>
+                      <li style="display: inline;" class="pl-4 text-warning font-weight-bold">5/5</li>
+                      </a>
+                      <div>
+                      <a href="#" class="card-link">
+                        <i  class="fas fa-heart mr-2"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                    <h5 style="font-size:12px; font-weight: bold;" class="card-title mt-2">Photoshop for Beginners</h4>
+                    <h6 style="font-size:10px;" class="card-subtitle mb-2 text-muted">Medhat Shalabi - Graphic Designer</h6>
+                    <h5 style="font-size:16px; font-weight: bold; font-family: 'Roboto';">20 $<span class="pl-3 mt-2 " style="font-size:14px; color: rgb(202, 201, 201);"><del>50$</del></span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    
+    <div>
+      <div class="scroll-indicator" id="section04" data-scroll-indicator-title="Fourth Section"></div>
+    </div>
+    <div>
+       <section class="sec-elite">
+          <div class="container">
+                    <h1 class="h1-elite">Elite Courses</h1>
+    
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 d-flex">
+                      <div class="card-wrapper2">
+                        <div class="card card-elite mt-4 d-flex justify-content-center">
+                           <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                              <div style="width: 348px;">
+                              <img class="card-img card-img-elite" src="course.jpg" alt="Vans">
+                              <div class="card-content">
+                                <div class="pt-1" style="padding-left: 20px;padding-right: 20px;">
+                                <div class="buy d-flex justify-content-between align-items-center">
+                                  <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle">2,000 Students</h6>
+                                  <h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle text-right">3 hours</h6>
+                                </div>
+                                </div>
+                                <div class="card-title pt-2 pr-4 pl-3">
+                                <div class="buy d-flex justify-content-between align-items-center">
+                                  <a href="#" class="card-link mb-1">
+                                  <li style="display: inline;"><img class="mb-1" src="stars.png" width="100px"></li>
+                                  <li style="display: inline;" class="pl-4 text-warning font-weight-bold">5/5</li>
+                                  </a>
+                                  <div>
+                                  <a href="#" class="card-link">
+                                    <i  class="fas fa-heart mr-2"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                  </a>
+                                </div>
+                                </div>
+                                <h5 style="font-size:15px; font-weight: bold;" class="card-title mt-2">Photoshop for Beginners</h5>
+                                <h6 style="font-size:13px;" class="card-subtitle mb-2 text-muted">Medhat Shalabi - Graphic Designer</h6>
+                                <h5 class="mt-3" style="font-size:18px; font-weight: bold; font-family: 'Roboto';">200 $<span class="pl-3 mt-2 " style="font-size:16px; color: rgb(202, 201, 201);"><del>300$</del></span></h5>
+                                </div>
+                             </div>
+                              </div>
+                            </div>
+                              <div class="col-sm-6 col-md-6 left-elite">
+                                <h5 class="mt-3">About The Course :</h5>
+                                <p class="mt-4" style="font-size: 12px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+                                <div class="panel mt-4">
+                                  <h6>Section 1 : Basic Tools</h6>
+                                  <p style="font-size: 12px;">30 min</p>
+                                </div>
+                                <div class="panel">
+                                  <h6>Section 1 : Basic Tools</h6>
+                                  <p style="font-size: 12px;">30 min</p>
+                                </div>
+                                <div class="panel">
+                                  <h6>Section 1 : Basic Tools</h6>
+                                  <p style="font-size: 12px;">30 min</p>
+                                </div>
+                                <div class="panel">
+                                  <h6>Section 1 : Basic Tools</h6>
+                                  <p style="font-size: 12px;">30 min</p>
+                                </div>
+                              </div>
+                           </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+    </div>
+    
+    <div>
+      <div class="scroll-indicator" id="section05" data-scroll-indicator-title="Last Section"></div>
+    </div>
+    <div>
+      <section class="sec-blogs">
+            <div class="container ">
+              <h1 class="h1-blogs">Blogs</h1>
+              <div class="row gutters pt-5">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                  <div class="card-wrapper">
+                  <div class="card card-blogs mx-4">
+                    <img class="card-img" src="course.jpg" alt="Vans">
+                    <div class="card-img-overlay d-flex justify-content-end">
+                    </div>
+                    <div class="pt-1 pb-5" style="padding-left: 20px;padding-right: 20px;">
+                      <div class="buy justify-content-between align-items-center">
+                        <center><h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle center pt-1 pb-1">Tips and Tricks in Photoshop 2020</h6></center>
+                        <p class="pt-3" style="text-align: justify; font-size: x-small;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        <button style="text-align: left;" class="btn btn-sm btn-outline-secondary secondary2">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                  <div class="card-wrapper">
+                  <div class="card mx-4 card-blogs">
+                    <img class="card-img" src="course.jpg" alt="Vans">
+                    <div class="card-img-overlay d-flex justify-content-end">
+                    </div>
+                    <div class="pt-1 pb-5" style="padding-left: 20px;padding-right: 20px;">
+                      <div class="buy justify-content-between align-items-center">
+                        <center><h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle center pt-1 pb-1">Tips and Tricks in Photoshop 2020</h6></center>
+                        <p class="pt-3" style="text-align: justify; font-size: x-small;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        <button style="text-align: left;" class="btn btn-sm btn-outline-secondary secondary2">Read More</button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                    <div class="card card-blogs mx-4">
+                      <img class="card-img" src="course.jpg" alt="Vans">
+                      <div class="card-img-overlay d-flex justify-content-end">
+                      </div>
+                      <div class="pt-1 pb-5" style="padding-left: 20px;padding-right: 20px;">
+                        <div class="buy justify-content-between align-items-center">
+                          <center><h6 style="font-size: 12px; font-family: 'Roboto';" class="card-subtitle center pt-1 pb-1">Tips and Tricks in Photoshop 2020</h6></center>
+                          <p class="pt-3" style="text-align: justify; font-size: x-small;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                          <button style="text-align: left;" class="btn btn-sm btn-outline-secondary secondary2">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </section>
+    </div>
+
+        <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <h6>Subscribe to Business Monster School via Email</h6>
+            <h6 class="h6-light">Join, Learn, win & achieve.</h6>
+            <form class="form-inline" action="/action_page.php">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter email" id="email">
+              <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+            </form>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="footer-links ">
+              <li>Home</li>
+              <li>Our Team</li>
+              <li>About Us</li>
+              <li>Course</li>
+              <li>Elite Courses</li>
+              <li>Blogs</li>
+            </ul>
+            <ul class="footer-links upper">
+              <li>+44 345 678 903</li>
+              <li>abobexd@mail.com</li>
+              <li>find a store</li>
+            </ul>
+          </div>
+       
+          </div>
         </div>
-        <div class='rect-box'>
+        <hr>
       </div>
-      <div class='rect-content'>
-        <div class="content">
-          <span>Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy eirmod<br> tempor invidunt ut labore et dolore magna.</span>
-        </div>
-      </div>
-      <button class="btn btn-outline-secondary ml-1">Read More</button>
-      </div>
-      </div>
-    </section>
+</footer>
+<div class="footer-banner" style="background-color:#151515">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <h6>© AdobeXD Kit 2017</h6>
+    </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <ul class="social-icons">
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/easyScrollDots.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      easyScrollDots({
+
+  // sets to true if you have a fixed navigation
+  'fixedNav': false,
+
+  // unique ID of your fixed navigation
+  'fixedNavId': '',
+
+  // set to true if your navigation is only sticky when scrolling up
+  'fixedNavUpward': false,
+
+  // the amount of pixels you wish to offset the scroll amount by
+  'offset': 30
+
+});
+  </script>
   </body>
 </html>
